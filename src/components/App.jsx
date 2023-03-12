@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import { Component } from "react";
 import { FeedBackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Notification } from "./Notification/Notification";
@@ -44,8 +43,7 @@ export class App extends Component {
             <Notification message="There is no feedback"/>
           )
             : <Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positivePercentage}></Statistics>
-          }
-           
+          }           
         </Section>
       </>
       )
